@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "prj-22"
+version = "0.1.0"
+description = ""
+authors = ["brunoaer24"]
+readme = "README.md"
+packages = [{include = "prj_22"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.5.3"
+numpy = "^1.24.2"
+prj-22-tools = {path = "../prj-22-tools"}
+matplotlib = "^3.7.1"
+sympy = "^1.11.1"
+scipy = "^1.10.1"
+keras = "^2.11.0"
+tensorflow = "^2.11.0"
+scikit-learn = "^1.2.2"
+
+[tool.poetry.group.dev.dependencies]
+pytorch = "^1.0.2"
+Scrapy = "^2.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
